@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+}
+:root{
+    --primary-color: #ffff;
+    --secondary-color: #212121;
+}
+.darks-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+
+}
+.container {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    height: 60vh;
+    overflow: hidden;
+
+    font-size: 2vw;
+    opacity: 0.67;
+    /* background-color: rgb(20, 18, 18); */
+    min-height: 54px; /* Use min-height to allow it to grow as needed */
+}
+
+.nav {
+    margin-top: 10px;
+    color: var(--primary-color);
+    margin-left: 15px;
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav ul li a:hover {
+    background-color: rgb(169, 163, 163);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+    justify-content: center;
+    align-items: center;
+    min-height: 355px;
+    position: relative;
+
+}
+
+#home::before {
+    content: "";
+    /* display: block; Make it a block element */
+    background: url(vegetables-752153_1280.jpg) no-repeat center/cover;
+    height: 50vh; /* Use vh units for responsive height */
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7s;
+}
+#darks  {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: end; /* For flex containers */
+    flex: 1;
+    text-align: end;
+    margin-left: 750px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Add a smooth transition effect */
+
+}
+#darks :hover {
+    transform: scale(1.1); /* Example: scale the image to 110% on hover */
+}
+
+
+#home h1 {
+    font-size: 3rem;
+    color: rgb(215, 210, 210);
+}
+.primary{
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+#home p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.btn {
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+    border: 2px solid white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.btn:hover {
+    background-color: rgb(24, 110, 184);
+    transform: scale(1.1);
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+    gap: 2vw; /* Use vw unit for responsive gap */
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+#contaoner2 {
+    border: 3px solid rgb(84, 10, 10);
+    width: 100%; /* Allow it to occupy the full width */
+    max-width: 400px;
+    height: 370px;
+    background: rgb(246, 188, 197);
+}
+
+#contaoner2 img {
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+#contaoner2 h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contaoner2 p {
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+}
+#contaoner3 {
+    border: 3px solid rgb(84, 10, 10);
+    width: 100%; /* Allow it to occupy the full width */
+    max-width: 400px;
+    height: 370px;
+    background: rgb(246, 188, 197);
+}
+
+#contaoner3 img {
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+#contaoner2 h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contaoner3 p {
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+}
+#contaoner4 {
+    border: 3px solid rgb(84, 10, 10);
+    width: 100%; /* Allow it to occupy the full width */
+    max-width: 400px;
+    height: 370px;
+    background: rgb(246, 188, 197);
+}
+
+#contaoner4 img {
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+#contaoner4 h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contaoner4 p {
+    padding: 1vh 2vw; /* Use vw and vh units for responsive padding */
+}
+
+
+
+.box3 {
+    height: auto; /* Allow it to adjust based on content */
+    
+    
+}
+
+.box3::before {
+    content: "";
+    position: absolute;
+    display: flex; /* Make it a block element */
+    flex-wrap: wrap;
+    border: 1px solid rgb(111, 103, 103);
+    width: 100%;
+    height: 50vh; /* Use vh units for responsive height */
+    opacity: 0.63;
+    background: url(vegetables-752153_1280.jpg);
+    z-index: -1;
+}
+
+.box3 h3 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.image{
+    display: flex;
+}
+
+#img1 {
+    margin-left: 10vw; /* Use vw unit for responsive margin */
+}
+
+#img2 {
+    margin-left: 5vw; /* Use vw unit for responsive margin */
+}
+
+#img3 {
+    margin-left: 5vw; /* Use vw unit for responsive margin */
+}
+
+#img4 {
+    margin-left: 7vw; /* Use vw unit for responsive margin */
+}
+
+.disclamier {
+    margin-top: 0.3.x vh;
+    background: black;
+    margin-bottom: 15vh; /* Use vh unit for responsive margin */
+    color: antiquewhite;
+    height: calc(100% - 100px);
+
+    padding: 0vh 2vw; /* Use vw and vh units for responsive padding */
+}
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; /* Allow it to adjust based on content */
+    margin-top: 5vh; /* Use vh unit for responsive margin */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(contact-pages.png);
+}
+
+#message {
+    width: 100%; /* Allow it to occupy the full width */
+    max-width: 400px;
+    height: 30vh; /* Allow it to adjust based on content */
+}
+.heading3{
+display: flex;
+}
+    
+@media (max-width:600px) {
+    .image{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    #img1{
+        height: 10vh;
+        width: 10vw;
+    }
+    #img2{
+        height: 10vh;
+        width: 10vw;
+    }
+    #img3{
+        height: 10vh;
+        width: 10vw;
+    }
+    #img4{
+        height: 10vh;
+        width: 10vw;
+    }  
+}
+@media screen and (max-width:238px) {
+    #contaoner2 p {
+        font-size: 1.1vh;
+    }
+    #contaoner3 p {
+        font-size: 1.1vh;
+    }
+    #contaoner4 p {
+        font-size: 1.1vh;
+    }
+}
+@media (max-width:457px) {
+p#para{
+    font-size: 1.5vh;
+
+}
+h1.primary{
+    font-size: 1vh;
+
+}
+
+}
